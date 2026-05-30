@@ -29,7 +29,7 @@ client.username_pw_set(USERNAME, PASSWORD)
 client.tls_set()  # Enable SSL/TLS encryption
 client.on_connect = on_connect
 
-print("🔌 Connecting to MQTT Broker...")
+print(" Connecting to MQTT Broker...")
 client.connect(BROKER_URL, PORT, 60)
 client.loop_start()
 
@@ -42,7 +42,7 @@ while True:
             "humidity": humidity
         }
 
-        print(f"📡 Sending Data → Temp: {temperature}°C, Humidity: {humidity}%")
+        print(f" Sending Data → Temp: {temperature}°C, Humidity: {humidity}%")
 
         client.publish("factory/data", json.dumps(data))
     else:
