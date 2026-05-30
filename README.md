@@ -19,7 +19,11 @@ This project collects environmental and distance data using sensors connected to
 - Real-time monitoring and visualization
 
 ---
+## Flow
 
+<img width="1280" height="618" alt="image" src="https://github.com/user-attachments/assets/fa09f231-33d9-47a9-891c-36eccf99e9c8" />
+
+---
 ## 🛠 Hardware Components
 
 | Component | Quantity |
@@ -79,7 +83,11 @@ HC-SR04 ECHO
 | SCL | GPIO3 (SCL) |
 
 ---
+## Setup
 
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/11fc676e-b988-4f71-b58e-062b193d9e5b" />
+
+---
 ## ⚙️ Software Requirements
 
 ### Raspberry Pi
@@ -131,6 +139,7 @@ your-cluster.s1.eu.hivemq.cloud
 Topic:
 factory/data
 ```
+<img width="1280" height="679" alt="image" src="https://github.com/user-attachments/assets/594bc4a4-fdfc-4144-94a3-94a3a7886f58" />
 
 ---
 
@@ -177,6 +186,8 @@ MQTT Configuration:
 | TLS | Enabled |
 | Topic | factory/data |
 
+<img width="1280" height="644" alt="image" src="https://github.com/user-attachments/assets/23a4e455-4f8e-4956-bec4-044db3a5244e" />
+
 ---
 
 ## 🚀 Running the Project
@@ -196,6 +207,7 @@ Humidity: 65%
 Distance: 120 cm
 Published Successfully
 ```
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/23eaaaca-b13f-462d-bd9b-f87647e26f10" />
 
 ---
 
