@@ -1,12 +1,12 @@
 # 🌡️ Industrial Temperature & Distance IoT Monitor
 
-An IoT-based monitoring system using Raspberry Pi Zero 2W that measures temperature, humidity, and distance, displays the values on an LCD, and publishes sensor data to an MQTT broker for real-time monitoring using Node-RED.
+An IoT-based monitoring system using Raspberry Pi Zero 2W that measures temperature and humidity, displays the values on an LCD, and publishes sensor data to an MQTT broker for real-time monitoring using Node-RED.
 
 ---
 
 ## 📌 Project Overview
 
-This project collects environmental and distance data using sensors connected to a Raspberry Pi and sends the data to a cloud MQTT broker (HiveMQ Cloud). The data can then be visualized in Node-RED dashboards.
+This project collects environmental temperature data using sensors connected to a Raspberry Pi and sends the data to a cloud MQTT broker (HiveMQ Cloud). The data can then be visualized in Node-RED dashboards.
 
 ### Features
 
@@ -30,11 +30,7 @@ This project collects environmental and distance data using sensors connected to
 |------------|----------|
 | Raspberry Pi Zero 2W | 1 |
 | DHT11 Sensor | 1 |
-| HC-SR04 Ultrasonic Sensor | 1 |
 | 16x2 LCD with I2C Module | 1 |
-| 10kΩ Resistor | 1 |
-| 1kΩ Resistor | 1 |
-| 2kΩ Resistor | 1 |
 | Breadboard | 1 |
 | Jumper Wires | As Required |
 
@@ -49,29 +45,6 @@ This project collects environmental and distance data using sensors connected to
 | VCC | 3.3V |
 | DATA | GPIO4 |
 | GND | GND |
-
-### HC-SR04 Ultrasonic Sensor
-
-| HC-SR04 | Raspberry Pi |
-|----------|-------------|
-| VCC | 5V |
-| TRIG | GPIO23 |
-| ECHO | GPIO24 (through voltage divider) |
-| GND | GND |
-
-### Voltage Divider for ECHO Pin
-
-```text
-HC-SR04 ECHO
-      |
-     1kΩ
-      |
-      +-------> GPIO24
-      |
-     2kΩ
-      |
-     GND
-```
 
 ### I2C LCD
 
@@ -156,8 +129,7 @@ Sample Payload:
 ```json
 {
   "temperature": 28,
-  "humidity": 65,
-  "distance": 120
+  "humidity": 65
 }
 ```
 
@@ -204,7 +176,6 @@ Expected Output:
 Connected to HiveMQ Cloud
 Temperature: 28°C
 Humidity: 65%
-Distance: 120 cm
 Published Successfully
 ```
 <img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/23eaaaca-b13f-462d-bd9b-f87647e26f10" />
@@ -214,7 +185,7 @@ Published Successfully
 ## 📁 Project Structure
 
 ```text
-Industrial-Temperature-Distance-Monitor/
+Industrial-Temperature-Monitor/
 │
 ├── monitor.py
 ├── README.md
@@ -227,4 +198,4 @@ Industrial-Temperature-Distance-Monitor/
 
 ---
 
-Industrial Temperature & Distance IoT Monitor using Raspberry Pi, MQTT, HiveMQ Cloud, and Node-RED.
+Industrial Temperature IoT Monitor using Raspberry Pi, MQTT, HiveMQ Cloud, and Node-RED.
