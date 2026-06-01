@@ -1,4 +1,4 @@
-# 🌡️ Industrial Temperature & Distance IoT Monitor
+# 🌡️ Industrial Temperature & Humidity IoT Monitor
 
 An IoT-based monitoring system using Raspberry Pi Zero 2W that measures temperature and humidity, displays the values on an LCD, and publishes sensor data to an MQTT broker for real-time monitoring using Node-RED.
 
