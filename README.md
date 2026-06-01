@@ -12,7 +12,6 @@ This project collects environmental temperature data using sensors connected to 
 
 - Temperature monitoring using DHT11
 - Humidity monitoring using DHT11
-- Distance measurement using HC-SR04 Ultrasonic Sensor
 - Real-time display on 16x2 I2C LCD
 - MQTT communication via HiveMQ Cloud
 - Node-RED dashboard integration
